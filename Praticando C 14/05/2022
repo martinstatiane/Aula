@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void) {
+  int valor;
+  valor = 50;
+  printf("digite um valor: ");
+  scanf(" %d", &valor);
+  printf("valor da minha variavel: %d\n", valor);
+  return 0;
+}
