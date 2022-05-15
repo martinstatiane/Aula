@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void) {
+  char letra;
+  
+  printf("digite um caractere\n");
+  letra = fgetc(stdin);
+  printf("o caractrere é: %c", letra);
+  return 0;
+}
