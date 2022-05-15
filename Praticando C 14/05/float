@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main(void) {
+  float numero = 5.89;
+  printf("valor da minha variavel: %f", numero);
+}
