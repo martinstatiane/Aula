@@ -5,6 +5,6 @@ int main(void) {
   
   printf("digite um caractere\n");
   letra = getc(stdin);
-  printf("o caractrere é: %c");
+  printf("o caractrere é: %c", letra);
   return 0;
 }
