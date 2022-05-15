@@ -1,0 +1,9 @@
+
+int main(void) {
+  char sexo = 'k';
+  printf("valor da minha variavel: %c", sexo);
+
+  printf("digite seu sexo: F OU M\n");
+  scanf("%c", &sexo);
+  printf(" valor da minha variavel sexo: %c", sexo);
+}
