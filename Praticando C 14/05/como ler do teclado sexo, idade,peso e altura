@@ -1,0 +1,8 @@
+int main(void) {
+  char sexo;
+  int idade;
+  float peso, altura;
+  printf("digite o sexo (f ou m), idade,peso e altura ");
+  scanf("%c%d%f%f", &sexo, &idade, &peso, &altura);
+  printf("sexo: %c\n idade: %d\n peso: %f\n altura: %f", sexo, idade, peso, altura);
+    }
