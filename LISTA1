@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main(void) {
+
+  float v1, v2, soma, subtracao, divisao, multiplicao;
+  int operacao;
+
+printf ("Digite o Primeiro Valor: ");
+scanf ("%f", &v1);
+  
+printf ("Digite o Segundo Valor: ");
+scanf ("%f", &v2);
+
+printf("Digite '0' para Adição:\n Digite '1' para Subtração:\n Digite '2' para Divisão:\n Digite '3' para Multiplicação:\n");
+  
+scanf("%d", &operacao);
+  
+soma = v1 + v2;
+subtracao = v1 - v2;
+divisao = v1 / v2;
+multiplicao = v1 * v2;
+
+if (operacao == 0){
+
+printf("resultado da soma é %.2f \n", soma);
+  
+}
+
+if (operacao == 1){
+
+printf("resultado da subtração é %.2f \n", subtracao);
+  
+}
+
+if (operacao == 2){
+
+printf("resultado da divisão %.2f \n", divisao);
+  
+}
+
+if (operacao == 3){
+
+printf("resultado da multiplição é %.2f \n", multiplicao);
+  
+}
+  
+  return 0;
+}
