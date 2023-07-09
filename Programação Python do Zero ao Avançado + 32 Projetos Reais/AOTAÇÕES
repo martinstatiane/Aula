@@ -1,0 +1,218 @@
+PRINT 
+print(“ “)  comando para imprimir na tela 
+
+ADICIONAR COMENTÁRIO 
+pode adicionar comentário colocando # na frente será um comentario simples 
+se adicionar ‘’’ ( tres aspas simples no inicio e no fim ) tudo que tiver dentro será identificado como comentário 
+
+TIPOS DE DADOS 
+tipo 1: texto 
+string 
+str (“ “) tudo que estiver dentro das aspas vai entender que é um texto 
+tipo 2: números 
+interger = número inteiro 
+flaut = uma fração 
+ tipo 3: boolean 
+bool = verdadeir o falso 
+
+VARIÁVEIS 
+espço na memoria para guardar dados 
+para declarar uma variavel é só da um nome a ela 
+ x = 2 aqui ta representando que X é a variavel e o 2 é o valor dela, tudo que estiver na frente do = ele vai associar a X 
+
+MODIFICAÇÃO DE DADOS 
+para mudar a variave basta declarar ela depois colocar a abreviação e parentes 
+ex; x = float( 5) ai imprime 5 como fração
+ 
+PRATICANDO COM STRING E INTEGER
+imprimir  a frase = “ a tatiane tem 28 anos de idade e mora em patos “ 
+
+nome = " Tatiane "
+idade = 28
+cidade = " patos "
+
+print('a' + nome + ' tem ' + str(idade) + ' de idade e mora na ' + cidade )
+
+
+obs: a variável idade teve que converter para caractere por que em um mesmo print não pode ter dois tipos de variáveis 
+ se não quiser mudar dentro do print basta quando declarar a variável declarar que idade é um stinger 
+
+
+nome = " Tatiane "
+idade = 28
+idade = str(idade)
+cidade = " patos "
+ADICIONANDO INPUT 
+ao invés de simplesmente imprimir  a frase vamos solicitar que o usuário a digite 
+tudo que for digitado dentro do parentes do input será atribuído a variavel nome 
+
+
+
+nome = input ( ' qual o seu nome?')
+idade = 27
+idade = str(idade)
+cidade = 'patos '
+
+
+print(' a ' + nome + ' tem ' + idade + ' de idade e mora na cidade de ' + cidade )
+
+
+nome = input ( ' qual o seu nome?')
+idade = input ("qual a sua idade?" )
+idade = str(idade)
+cidade = 'patos '
+
+
+print(' a ' + nome + ' tem ' + idade + ' de idade e mora na cidade de ' + cidade )
+
+
+CALCULANDO A IDADE COM O INPUT 
+
+sem o input
+
+
+ano_nascimento = 1995 
+idade = 2023 - ano_nascimento 
+
+print( idade)
+
+COMANDO PRINT TYPE 
+ no comando priny(type) você descobre qual o tipo da variável 
+
+ano_nascimento = 1995 
+print( type(ano_nascimento))
+
+com o input 
+
+tem que deixar as duas variáveis do mesmo tipo se não o print não co consegue lê por isso do int na variável idade 
+
+ano_nascimento = input(' em qul no você nasceu? ')
+idade = 2023 - int(ano_nascimento) 
+
+print( idade)
+
+
+ ENTENDENDO O SLICE
+
+O slice serve para imprimir uma parte da informação, por exemplo quero imprimir só uma letra
+
+INDEX - é a posição do caractere dentro da variável, por exemplo a palavra abacate tem 7 letras e o index vai de 0 a 6 cada letra é um número A = 0 B =1 A=2 C=3 A=4 T=5 E=6 
+
+fruta = 'abacate '
+print(fruta[ 3])
+
+o número que for digitado dentro dos [ ] vai imprimir a letra 
+
+se quiser imprimir várias letras é só colocar a posição da primeira letra separar com dois pontos e a posição da última letra, lembrado que o index imprime uma letra antes 
+
+por exemplo imprimir as letras ACAT  se colocar 
+2:5 irá imprimir só as letras ACA 
+
+
+fruta = 'abacate '
+print(fruta[ 2:5])
+
+;2 puxa do início até o 2 
+0: ele puxa do início até o fim 
+
+UTILIZANDO FORMATED STRINGS 
+O formated strings basta declarar a variável e colocar o F colocar as aspas e as variáveis dentro de colchetes e não precisa colocar o + e nem espaço entre as variáveis 
+
+texto = f'a { nome} {sobrenome} e uma excelente [{ profissao}]'
+
+print( texto)
+
+METODOS PARA STRINGS 
+
+é o metodo para formatar como a mensagem quer ser impressa, por exemplo a frase está com letras maiúsculas e minúsculas ai você quer que fuque toda maiúscula
+é só colocar a variavel depois ponto o metodo parenres 
+ex: 
+ 
+mensagem = ‘ eu adoro comida caseira ‘ 
+mensagem = ' EU ADORO Comida caseira'
+print( mensagem.lower())
+ 
+
+
+OPERAÇÕES MATEMATICA EM PYTHOM 
+
+SEGUE A MESMA PROCEDÊNCIA Da matemática 
+
+Parentes
+exponencial 
+multiplicação e divisão 
+adição e subtração 
+
+
+calculo = 2+2
+print( calculo)
+
+
+calculo = 2+2*3
+print( calculo)
+
+OPERADORES DE COMPARAÇÃO 
+
+== igual 
+!= diferente 
+> maior 
+< menor 
+>= maior ou igual 
+<= menor ou igual 
+
+
+operadores = 2==3
+print( operadores)
+
+
+
+OPERADORES DE ATRIBUIÇÃO 
+
+Pode atribuir um valor a variável 
+ x = 10 
+x = x + 5
+print( x) 
+ 
+resultado vai ser 15 por que ele entende que x já ja é 10 e soma com  5 
+também pode fazer colocando o sinal antes da igualdade 
+
+x = 10
+x -= 4
+x*=3
+x /5
+print(x)
+
+CONTROLE DE FLUXO 
+IF, ELSE 
+
+IF = se, quer dizer que podemos dizer para uma variável se determinada coisa for falsa faça isso se for verdadeira faça aqui 
+EX: em uma rodovia a velocidade limite é 110, caso o motorista passe desse valor imprimir acima da velocidade 
+
+velocidade = 109
+
+
+if velocidade > 110:
+  print(" acima da velocidade")
+
+ELSE = se o if não acontecer faça isso 
+velocidade = 111
+
+
+if velocidade > 110:
+  print(" acima da velocidade")
+
+else:
+  print(" na velocidade certa ")
+
+
+velocidade = 40
+
+
+if velocidade > 110:
+  print(" acima da velocidade")
+elif velocidade < 80:
+  print(' por favor dirigir acima de 80')
+else:
+  print(" na velocidade certa ")
+ 
+ ELIF é uma condição que fica entre o if e o else caso nem um nem outro aconteça 
